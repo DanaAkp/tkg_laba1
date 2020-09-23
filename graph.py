@@ -42,9 +42,13 @@ class Graph:
         print()
 
     def __call__(self, *args, **kwargs):
+        print('Матрица смежности:')
         self.print_matrix(self.get_matrix_adjacency())
+        print('Матрица инцидентности:')
         self.print_matrix(self.get_matrix_incidence())
+        print('Полустепени исхода для каждой вершины:')
         print(self.semi_exodus)
+        print('Полустепени захода для каждой вершины:')
         print(self.half_degree_of_approach)
 
     # Получение полустепени исхода
