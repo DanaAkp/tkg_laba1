@@ -36,6 +36,9 @@ import matplotlib.pyplot as plt
 #     g1()
 #     g2()
 
+def new_branch():
+    pass
+
 
 def extend_matrix(matrix, v):
     ext_matrix = numpy.array([[0] * v] * v)
